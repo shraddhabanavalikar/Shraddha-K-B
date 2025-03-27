@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<h1 align ="center">Arithmetic Operations</h1>
+<table border="5" align="center" cellspacing="10" cellpadding="10">
+<tr>
+<th>Enter Number1:</th>
+<td><input type="text" name="num1" id="num1"></td>
+</tr>
+<tr>
+<th>Enter Number2:</th>
+<td><input type="text" name="num2" id="num2"></td>
+</tr>
+<tr>
+<th>Answer:</th>
+<td><input type="text" name="ans" id="ans"></td>
+</tr>
+<tr>
+<th colspan="2" align="center">
+<input type="button" onclick="add()" value="+" style="height:50px;
+width:50px">
+<input type="button" onclick="sub()" value="-" style="height:50px;
+
+width:50px">
+<input type="button" onclick="div()" value="/" style="height:50px;
+width:50px">
+<input type="button" onclick="mul()" value="*" style="height:50px;width:50px">
+<input type="button" onclick="mod()" value="%" style="height:50px;
+width:50px">
+</th>
+</tr>
+</form>
+<script>
+function add()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a+b;
+document.getElementById("ans").value=c;
+}
+function sub()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a-b;
+document.getElementById("ans").value=c;
+}
+function div()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a/b;
+document.getElementById("ans").value=c;
+}
+function mul()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a*b;
+document.getElementById("ans").value=c;
+}
+
+function mod()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a%b;
+document.getElementById("ans").value=c;
+}
+</script>
+<h2>JavaScript switch</h2>
+<script>
+let day= 1;
+switch (day) {
+case 0:
+day = "Sunday";
+break;
+case 1:
+day = "Monday";
+break;
+case 2:
+day = "Tuesday";
+break;
+case 3:
+day = "Wednesday";
+break;
+case 4:
+day = "Thursday";
+break;
+case 5:
+day = "Friday";
+break;
+case 6:
+day = "Saturday";
+}
+document.write("Today is " + day);
+</script>
+<h2>JavaScript Array Methods</h2>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.write("Fruits = ", fruits, "<br>");
+fruits.unshift("Pinapple");
+document.write("After Adding new element at beginning in fruits = ", fruits, "<br>");
+fruits.shift();
+document.write("After removing element at beginning in fruits = ", fruits, "<br>");
+fruits.push("Strawberry");
+document.write("After adding new element at end in fruits = ", fruits, "<br>");
+fruits.sort();
+document.write("After Sorting fruits in ascending order = ", fruits, "<br>");
+fruits.reverse();
+document.write("After Sorting fruits in descending order = ", fruits, "<br>");
+document.write("After taking slice of string = ", fruits.slice(1, 3), "<br>");
+document.write("After Joining fruits with : = ", fruits.join(":"), "<br>");
+fruits[1] = "Water Melon";
+document.write("After Modifying first element of fruits = ", fruits, "<br>");
+fruits.pop();
+document.write("After deleting last element of fruits = ", fruits, "<br>");
+</script>
+</body>
+</html>
