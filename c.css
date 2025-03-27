@@ -1,0 +1,55 @@
+.head{
+    background-color: black;
+    color: white;
+
+    }
+    .info{
+        color: grey;
+        font-weight:bold;
+        font-size:small;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .p3:hover{
+        color: white;
+    }
+    .p4:hover{
+        color: white;
+    }
+    .p5:hover{
+        color: white;
+    }
+    .p5:hover{
+        color: white;
+    }
+    .p6:hover{
+        color: white;
+    }
+    
+    .text{
+        text-align: center;
+        font-size: medium;
+        font-weight:bold;
+    }
+    .imgs{
+        background-color: black;
+        color: white;
+        align-items: center;
+        height: px;
+        width: 250px;
+
+    }
+
+    .about{
+        font-size:larger;
+        font-weight: bolder;
+    }
+    .information{
+        font-weight: lighter;
+    }
+    .con{
+        background-color: black;
+        color: white;
+    }
+   
